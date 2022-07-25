@@ -1,11 +1,18 @@
 ﻿@{
     ViewBag.Title = "Ana Sayfa";
+    if (Session["userID"] == null)
+    {
+        Response.Redirect("~/Login/Index");
+    }
 }
 
 <div class="jumbotron">
     <h1>Yazılım Yolculuğuma Hoşgeldiniz.</h1>
-    <p class="lead">Yazılım dünyasında aldığım notlar, bildiklerim ve öğrendiklerimi paylaşacağım.</p>
+    <p class="lead">Yazılım dünyasında aldığım notları, edindiğim tecrübeleri ve öğrendiklerimi paylaşacağım.</p>
     <p><a href="https://asp.net" class="btn btn-primary btn-lg">Daha Fazla &raquo;</a></p>
+
+    @*<h3>Hoşgeldiniz, @Session["userName"].ToString()</h3>
+    <a href="@Url.Action("LogOut","Login")">Çıkış Yapın</a>*@
 </div>
 
 <div class="row">
