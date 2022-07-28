@@ -7,7 +7,21 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <link rel="icon" href="~/favicon.jpg" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <style>
+        ul.nav.nav-tabs {
+            margin: 10px 0px;
+        }
+
+            ul.nav.nav-tabs li:not(.active) a {
+                background-color: #eeeeee;
+                color: grey;
+            }
+
+            ul.nav.nav-tabs li.active a {
+                border-top: 3px solid #16a765;
+            }
+
         .footer {
             position: fixed;
             bottom: 0px;
@@ -39,7 +53,8 @@
                     <li>@Html.ActionLink("Anasayfa", "Index", "Home")</li>
                     <li>@Html.ActionLink("Hakkımda", "About", "Home")</li>
                     <li>@Html.ActionLink("İletişim", "Contact", "Home")</li>
-                    <li><a href="~/Customer">Customer</a></li>
+                    <li><a href="~/Customer">Notlarım</a></li>
+                    <li><a href="~/Employee">Employee</a></li>
                 </ul>
                 <div class="form-inline my-2 my-lg-0" style="float:right;">
                     <h5 class="form-control mr-sm-2">Hoşgeldiniz, <strong>@Session["userName"].ToString()</strong> </h5>
@@ -55,8 +70,15 @@
     <footer class="footer">
         <p>&copy; @DateTime.Now.Year - Designed MustafaÇ.</p>
     </footer>
+
+    <div class="loaderbody" id="loaderbody">
+        <div class="loader"></div>
+    </div>
+
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <script src="~/Scripts/Scripts.js"></script>
+    <script src="~/Scripts/notify.min.js"></script>
 </body>
 </html>

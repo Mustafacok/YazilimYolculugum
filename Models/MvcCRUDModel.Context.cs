@@ -26,6 +26,7 @@ namespace MvcCRUD.Models
         }
     
         public virtual DbSet<Customer> Customer { get; set; }
+        public virtual DbSet<Employee> Employee { get; set; }
         public virtual DbSet<User> User { get; set; }
     }
 }

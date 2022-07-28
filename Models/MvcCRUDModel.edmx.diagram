@@ -6,7 +6,8 @@
     <edmx:Diagrams>
       <Diagram DiagramId="e93630f6def94ef9afc7bf5efc9a8686" Name="Diagram1">
         <EntityTypeShape EntityType="MvcCRUDModel.Customer" Width="1.5" PointX="0.75" PointY="0.75" />
-        <EntityTypeShape EntityType="MvcCRUDModel.User" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MvcCRUDModel.Employee" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MvcCRUDModel.User" Width="1.5" PointX="0.75" PointY="3.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
