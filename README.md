@@ -14,6 +14,8 @@ Tools I used in the project;
 -- Delete Operation
 -- Implement JQery Datatable
 
+Username: admin
+Password: demo
 
 I would be very grateful if you could review and provide feedback..
 
